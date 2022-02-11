@@ -25,10 +25,17 @@ echo $usuario;*/
 $aluno->insert();
 echo $aluno;*/
 
-//Atualizando dados do banco
-$usuario = new Usuario();
+//Atualizando usuario
+/*$usuario = new Usuario();
 $usuario->loadById(8);
 $usuario->update("professor", "!@#$%¨&*");
+echo $usuario;*/
+
+//Deletando
+$usuario = new Usuario();
+$usuario->loadById(8);
+$usuario->delete();
 echo $usuario;
+
 
  ?>
